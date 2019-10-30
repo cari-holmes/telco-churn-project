@@ -14,7 +14,6 @@ def clean_data(df):
     df.drop(columns=['partner', 'dependents', 'streaming_tv', 'streaming_movies'], inplace=True)
     return df
 
-# train, test = train_test_split(df, train_size=.7, random_state=123)
 
 def encode(train, test):
     encoder = LabelEncoder()
